@@ -39,7 +39,6 @@ Below are screenshots displaying the Budget Tracker's user interface, and the fu
 The Budget Tracker is a deployed application, which can be visited using the link posted below in the "Link" section of the README. But if you would like to install and run the app locally you can follow the installation steps below:
 
 
-
 ## Usage
 
 
@@ -48,7 +47,6 @@ The Budget Tracker is a deployed application, which can be visited using the lin
 ## Link
 
 If you would like to visit the deployed Budget Tracker application please follow the link below:
-
 
 
 ## License
@@ -83,7 +81,7 @@ For all other questions or inquires please feel free to contact me via email at 
 
 ## Credits
 
-All of the models, routes, controllers, and server configurations were created by myself, Sammi Moore.
+The Budget Tracker was created using starter code in combination of code written by myself, Sammi Moore. The start code was provided by Xandromus, and can be accessed by clicking on this [GitHub](https://github.com/coding-boot-camp/symmetrical-bassoon) link. The starter code contained all of the front-end functionality, as well as the server and some api routes to allow the user to send data from the front-end to the back-end and mongoDB database. My contribution to this code was to make the application functional offline. I added indexedDB and a service worker to store data in the browser and then allow users to track their budgets offline or with poor internet connection respectively. I also added a manifest.json file in order for the app to be converted into a PWA.
 
 The resources that I used for this project are as follows:
 - The mongoose package from npm in this node.js application in order more easily use mysql databases (https://www.npmjs.com/package/mongoose)
