@@ -58,7 +58,6 @@ Skip to step 5 if you are visiting the Budget Tracker app via the link below, ot
 2. In the command line after you have run *npm install*, you will enter the command *npm start* to get the server running.
 3. If this command was successful you should see a message indicating which port the app is running on, which you can then visit in your browser.
 4. This app should be running on port 3001, so in your browser visit localhost:3001 which should take you to the budget tracker application.
-
 5. Once you have arrived at the budget tracker application there are several functionalities this app provides to the user.
 6. Within the app you will see two input boxes below the "Your total is:" line at the top of the screen, and next to the second box there are two buttons, one for adding funds and one for subtracting funds
 7. To enter a transaction you will need to enter a name for this transaction, and then a dollar amount for the transaction. 

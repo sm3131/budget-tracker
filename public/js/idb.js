@@ -25,7 +25,7 @@ request.onerror = function (event) {
     console.log(event.target.errorCode);
 };
 
-// This function will be executed if we attempt to submit a new money and there's no internet connection
+// This function will be executed if we attempt to submit a new transaction and there's no internet connection
 function saveRecord(record) {
     // open a new transaction with the database with read and write permissions 
     const transaction = db.transaction(['new_money'], 'readwrite');
@@ -33,22 +33,22 @@ function saveRecord(record) {
     // access the object store for `new_money`
     const moneyObjectStore = transaction.objectStore('new_money');
 
-    // add record to your store with add method
+    // add record to store with add method
     moneyObjectStore.add(record);
 }
 
 function uploadMoney() {
-    // open a transaction on your db
+    // open a transaction on the db
     const transaction = db.transaction(['new_money'], 'readwrite');
 
-    // access your object store
+    // access the object store
     const moneyObjectStore = transaction.objectStore('new_money');
 
     // get all records from store and set to a variable
     const getAll = moneyObjectStore.getAll();
 
     getAll.onsuccess = function () {
-        // if there was data in indexedDb's store, let's send it to the api server
+        // if there was data in indexedDb's store, send it to the api server
         if (getAll.result.length > 0) {
             fetch('/api/transaction', {
                 method: 'POST',
@@ -67,7 +67,7 @@ function uploadMoney() {
                     const transaction = db.transaction(['new_money'], 'readwrite');
                     // access the new_money object store
                     const moneyObjectStore = transaction.objectStore('new_money');
-                    // clear all items in your store
+                    // clear all items in the store
                     moneyObjectStore.clear();
 
                     alert('All saved money has been submitted!');
