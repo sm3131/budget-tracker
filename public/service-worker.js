@@ -5,7 +5,6 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 //Caching files for offline access
 const FILES_TO_CACHE = [
     "./",
-    "./api/transaction",
     "./index.html",
     "./css/styles.css",
     "./js/index.js",
